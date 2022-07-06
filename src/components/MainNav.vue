@@ -7,13 +7,11 @@
         <a :href="url" class="flex items-center hfull text-xl">{{ company }}</a>
         <nav class="h-full ml-12">
           <ul class="flex h-full m-0 p-0 list-none">
-            <li class="h-full">
-              <a href="#" class="flex items-center h-full py-2.5"> Teams</a>
-            </li>
             <li
               v-for="menuItem in menuItems"
               :key="menuItem"
-              class="h-full ml-9"
+              class="h-full ml-9 first:ml-0"
+              datatest='main-nav-list-item'
             >
               <a href="#" class="flex items-center h-full py-2.5">{{
                 menuItem
